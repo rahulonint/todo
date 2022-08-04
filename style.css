@@ -93,7 +93,7 @@
 }
 
 footer {
-    height: 10vh;
+    height: 5vh;
     width: 100vw;
     background: #FF4835;
     color: aliceblue;
@@ -103,7 +103,6 @@ footer {
     text-shadow: 0 0 5px black;
     position: absolute;
     bottom: 0;
-    font-size: 1.5rem;
 }
 
 footer a {
