@@ -43,8 +43,8 @@
 .tasks {
     background: #FF4835;
     overflow-y: scroll;
-    max-height: 27rem;
-    width: 37rem;
+    max-height: 22rem;
+    width: 87vw;
     margin: 1rem auto;
     padding: 1rem;
     border-radius: 0.4rem;
@@ -61,12 +61,12 @@
 .common-box {
     padding: inherit;
     font-size: 1.5rem;
-    display: inline-block;
-    width: 30rem;
+    width: 85%;
     height: 2.5rem;
     color: aliceblue;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .innerBox {
@@ -75,10 +75,9 @@
     background: #0b5722f0;
     border-radius: 0.2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 0.4rem;
-    padding-top: 0;
 }
 
 .done {
@@ -86,10 +85,15 @@
     color: #FF4835;
     cursor: pointer;
     font-weight: bold;
+    width: 15%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
-    height: 5vh;
+    height: 10vh;
     width: 100vw;
     background: #FF4835;
     color: aliceblue;
@@ -99,9 +103,58 @@ footer {
     text-shadow: 0 0 5px black;
     position: absolute;
     bottom: 0;
+    font-size: 1.5rem;
 }
 
 footer a {
     text-decoration: none;
     color: aliceblue;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background: #0b5722f0;
+}
+::-webkit-scrollbar-thumb {
+    background: aliceblue;
+}
+/* ------------------------------------- media queries ------------------------------------------ */
+@media screen and (max-width:830px) {
+    /* .tasks.show .common-box{
+        font-size: 1rem;
+    } */
+    .tasks.show .done{
+        /* font-size: 1rem; */
+        margin: 0 1rem;
+    }
+}
+@media screen and (max-width:600px){
+    .tasks.show .common-box{
+        margin: 1rem 0;
+    }
+    .tasks.show{
+        width: 95%;
+    }
+    /* .tasks.show .innerBox{
+        flex-direction: column;
+    } */
+}
+@media screen and (max-width:500px){
+    .tasks.show .common-box{
+        font-size: 1.12rem;
+    }
+    .tasks.show .done{
+        font-size: 1.12rem;
+    }
+    .tasks.show .innerBox{
+        flex-direction: column;
+}
+}
+@media screen and (max-width:300px){
+    .tasks.show .common-box{
+        font-size: 1rem;
+    }
+    .tasks.show .done{
+        font-size: 1rem;
+    }
 }
