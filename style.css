@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #474746;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 2rem 0;
+    color: #FF4835;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form input {
+    font-size: 1rem;
+    width: 33rem;
+    padding: 1rem 0.6rem;
+    margin: 0 1rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.container form .btn {
+    padding: 0.6rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FF4835;
+}
+
+.tasks {
+    background: #FF4835;
+    overflow-y: scroll;
+    max-height: 27rem;
+    width: 37rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    display: none;
+}
+
+.tasks.show {
+    display: flex;
+}
+
+.common-box {
+    padding: inherit;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 30rem;
+    height: 2.5rem;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.innerBox {
+    width: 100%;
+    min-height: 4rem;
+    background: #0b5722f0;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.4rem;
+    padding-top: 0;
+}
+
+.done {
+    font-size: 1.5rem;
+    color: #FF4835;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    height: 5vh;
+    width: 100vw;
+    background: #FF4835;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px black;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
