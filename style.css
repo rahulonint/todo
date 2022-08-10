@@ -67,6 +67,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: scroll;
 }
 
 .innerBox {
@@ -110,50 +111,48 @@ footer a {
     color: aliceblue;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 5px;
     background: #0b5722f0;
 }
+
 ::-webkit-scrollbar-thumb {
     background: aliceblue;
 }
+
 /* ------------------------------------- media queries ------------------------------------------ */
 @media screen and (max-width:830px) {
-    /* .tasks.show .common-box{
-        font-size: 1rem;
-    } */
-    .tasks.show .done{
-        /* font-size: 1rem; */
+    .tasks.show .done {
         margin: 0 1rem;
     }
 }
-@media screen and (max-width:600px){
-    .tasks.show .common-box{
-        margin: 1rem 0;
-    }
-    .tasks.show{
+
+@media screen and (max-width:600px) {
+    .tasks.show {
         width: 95%;
     }
-    /* .tasks.show .innerBox{
-        flex-direction: column;
-    } */
 }
-@media screen and (max-width:500px){
-    .tasks.show .common-box{
+
+@media screen and (max-width:500px) {
+    .tasks.show .common-box {
         font-size: 1.12rem;
     }
-    .tasks.show .done{
+
+    .tasks.show .done {
         font-size: 1.12rem;
     }
-    .tasks.show .innerBox{
+
+    .tasks.show .innerBox {
         flex-direction: column;
+    }
 }
-}
-@media screen and (max-width:300px){
-    .tasks.show .common-box{
+
+@media screen and (max-width:300px) {
+    .tasks.show .common-box {
         font-size: 1rem;
     }
-    .tasks.show .done{
+
+    .tasks.show .done {
         font-size: 1rem;
     }
 }
