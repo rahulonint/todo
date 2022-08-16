@@ -31,8 +31,3 @@ add.addEventListener("click", (e) => {
         })
     }
 })
-
-const commonBox = document.querySelector(".common-box")
-if(commonBox.style.overflow === true){
-    commonBox.style.backgroundColor = "yellow"
-}
